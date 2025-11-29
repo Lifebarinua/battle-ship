@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Environment variables / secrets
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.vscode/
+.idea/
+
+# Jest cache
+jest-cache/
+jest-resolve-cache/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Optional: If using Babel
+babel.config.json
+.cache/
+
+# Optional: If using TypeScript
+*.tsbuildinfo
+
+# Optional: cypress downloads / screenshots
+cypress/screenshots/
+cypress/videos/
