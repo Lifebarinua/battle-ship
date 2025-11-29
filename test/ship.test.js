@@ -1,4 +1,4 @@
-import Ship from './ship.js';
+import Ship from '../src/ship.js';
 
 test('ship registers hits', () => {
   const ship = new Ship(3);

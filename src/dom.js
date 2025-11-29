@@ -2,6 +2,8 @@ export default class Renderer {
   constructor() {
     this.playerBoardDiv = document.querySelector('#player-board');
     this.computerBoardDiv = document.querySelector('#computer-board');
+    this.messageDiv = document.querySelector('#messages'); // new div for attack messages
+    this.turnDiv = document.querySelector('#turn'); // new div for showing whose turn
   }
 
   renderBoards(playerBoard, computerBoard) {
@@ -40,5 +42,17 @@ export default class Renderer {
 
   showWinner(who) {
     alert(`${who} wins!`);
+  }
+
+  showMessage(msg) {
+    if (this.messageDiv) {
+      this.messageDiv.textContent = msg;
+    }
+  }
+
+  showTurn(playerType) {
+    if (this.turnDiv) {
+      this.turnDiv.textContent = `${playerType.toUpperCase()}'s turn`;
+    }
   }
 }
